@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"clock_dividerTB_func_synth.v" \
+"../../../../../../shifters/shifters.srcs/sim_1/new/clock_dividerTB.v" \
+
+# Do not sort compile order
+nosort

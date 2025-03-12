@@ -1,0 +1,329 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Mar 12 22:04:02 2025
+# Process ID: 20252
+# Current directory: D:/Mtech/Vivado/frequency_divider
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14580 D:\Mtech\Vivado\frequency_divider\frequency_divider.xpr
+# Log file: D:/Mtech/Vivado/frequency_divider/vivado.log
+# Journal file: D:/Mtech/Vivado/frequency_divider\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Mtech/Vivado/frequency_divider/frequency_divider.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/Mtech/Vivado/frequency_divider/frequency_divider.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1091.738 ; gain = 2.598
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 18
+[Wed Mar 12 22:04:32 2025] Launched synth_1...
+Run output will be captured here: D:/Mtech/Vivado/frequency_divider/frequency_divider.runs/synth_1/runme.log
+launch_simulation -mode post-synthesis -type functional
+Command: launch_simulation -mode post-synthesis -type functional
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'D:/Mtech/Vivado/frequency_divider/frequency_divider.sim/sim_1/synth/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35ticpg236-1L
+INFO: [Device 21-403] Loading part xc7a35ticpg236-1L
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1388.359 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1448.582 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1594.621 ; gain = 475.895
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode funcsim -nolib -force -file "D:/Mtech/Vivado/frequency_divider/frequency_divider.sim/sim_1/synth/func/xsim/clock_divider_func_synth.v"
+INFO: [SIM-utils-36] Netlist generated:D:/Mtech/Vivado/frequency_divider/frequency_divider.sim/sim_1/synth/func/xsim/clock_divider_func_synth.v
+INFO: [SIM-utils-54] Inspecting design source files for 'clock_divider' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Mtech/Vivado/frequency_divider/frequency_divider.sim/sim_1/synth/func/xsim'
+"xvlog --incr --relax -prj clock_divider_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Mtech/Vivado/frequency_divider/frequency_divider.sim/sim_1/synth/func/xsim/clock_divider_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_0
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_1
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_10
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_11
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_12
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_13
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_14
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_15
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_16
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_17
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_18
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_19
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_2
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_20
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_21
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_22
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_23
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_24
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_3
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_4
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_5
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_6
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_7
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_8
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_9
+INFO: [VRFC 10-311] analyzing module clock_divider
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Mtech/Vivado/frequency_divider/frequency_divider.sim/sim_1/synth/func/xsim'
+"xelab -wto 7f6124fcfbbc46d1a3fd3b09559af907 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot clock_divider_func_synth xil_defaultlib.clock_divider xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7f6124fcfbbc46d1a3fd3b09559af907 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot clock_divider_func_synth xil_defaultlib.clock_divider xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module xil_defaultlib.Tflipflop_IP
+Compiling module xil_defaultlib.Tflipflop_IP_0
+Compiling module xil_defaultlib.Tflipflop_IP_1
+Compiling module xil_defaultlib.Tflipflop_IP_2
+Compiling module xil_defaultlib.Tflipflop_IP_3
+Compiling module xil_defaultlib.Tflipflop_IP_4
+Compiling module xil_defaultlib.Tflipflop_IP_5
+Compiling module xil_defaultlib.Tflipflop_IP_6
+Compiling module xil_defaultlib.Tflipflop_IP_7
+Compiling module xil_defaultlib.Tflipflop_IP_8
+Compiling module xil_defaultlib.Tflipflop_IP_9
+Compiling module xil_defaultlib.Tflipflop_IP_10
+Compiling module xil_defaultlib.Tflipflop_IP_11
+Compiling module xil_defaultlib.Tflipflop_IP_12
+Compiling module xil_defaultlib.Tflipflop_IP_13
+Compiling module xil_defaultlib.Tflipflop_IP_14
+Compiling module xil_defaultlib.Tflipflop_IP_15
+Compiling module xil_defaultlib.Tflipflop_IP_16
+Compiling module xil_defaultlib.Tflipflop_IP_17
+Compiling module xil_defaultlib.Tflipflop_IP_18
+Compiling module xil_defaultlib.Tflipflop_IP_19
+Compiling module xil_defaultlib.Tflipflop_IP_20
+Compiling module xil_defaultlib.Tflipflop_IP_21
+Compiling module xil_defaultlib.Tflipflop_IP_22
+Compiling module xil_defaultlib.Tflipflop_IP_23
+Compiling module xil_defaultlib.Tflipflop_IP_24
+Compiling module unisims_ver.OBUF
+Compiling module xil_defaultlib.clock_divider
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot clock_divider_func_synth
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source D:/Mtech/Vivado/frequency_divider/frequency_divider.sim/sim_1/synth/func/xsim/xsim.dir/clock_divider_func_synth/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Mar 12 22:06:14 2025...
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 2009.492 ; gain = 397.480
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Mtech/Vivado/frequency_divider/frequency_divider.sim/sim_1/synth/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "clock_divider_func_synth -key {Post-Synthesis:sim_1:Functional:clock_divider} -tclbatch {clock_divider.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source clock_divider.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'clock_divider_func_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 2077.289 ; gain = 958.562
+export_ip_user_files -of_objects  [get_files D:/Mtech/Vivado/shifters/shifters.srcs/sources_1/new/clock_divider.v] -no_script -reset -force -quiet
+remove_files  D:/Mtech/Vivado/shifters/shifters.srcs/sources_1/new/clock_divider.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse D:/Mtech/Vivado/shifters/shifters.srcs/sim_1/new/clock_dividerTB.v
+update_compile_order -fileset sim_1
+set_property top clock_dividerTB [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+add_files -norecurse D:/Mtech/Vivado/shifters/shifters.srcs/sources_1/new/clock_divider.v
+update_compile_order -fileset sources_1
+set_property top clock_divider [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Mtech/Vivado/frequency_divider/frequency_divider.runs/synth_1
+
+launch_runs synth_1 -jobs 18
+[Wed Mar 12 22:08:32 2025] Launched synth_1...
+Run output will be captured here: D:/Mtech/Vivado/frequency_divider/frequency_divider.runs/synth_1/runme.log
+close_design
+launch_simulation -mode post-synthesis -type functional
+Command: launch_simulation -mode post-synthesis -type functional
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "D:/Mtech/Vivado/frequency_divider/frequency_divider.sim/sim_1/synth/func/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -mode post-synthesis -type functional
+Command: launch_simulation -mode post-synthesis -type functional
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'D:/Mtech/Vivado/frequency_divider/frequency_divider.sim/sim_1/synth/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35ticpg236-1L
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2095.473 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2095.473 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode funcsim -nolib -force -file "D:/Mtech/Vivado/frequency_divider/frequency_divider.sim/sim_1/synth/func/xsim/clock_dividerTB_func_synth.v"
+INFO: [SIM-utils-36] Netlist generated:D:/Mtech/Vivado/frequency_divider/frequency_divider.sim/sim_1/synth/func/xsim/clock_dividerTB_func_synth.v
+INFO: [SIM-utils-54] Inspecting design source files for 'clock_dividerTB' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Mtech/Vivado/frequency_divider/frequency_divider.sim/sim_1/synth/func/xsim'
+"xvlog --incr --relax -prj clock_dividerTB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Mtech/Vivado/frequency_divider/frequency_divider.sim/sim_1/synth/func/xsim/clock_dividerTB_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_0
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_1
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_10
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_11
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_12
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_13
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_14
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_15
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_16
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_17
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_18
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_19
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_2
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_20
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_21
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_22
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_23
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_24
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_3
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_4
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_5
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_6
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_7
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_8
+INFO: [VRFC 10-311] analyzing module Tflipflop_IP_9
+INFO: [VRFC 10-311] analyzing module clock_divider
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Mtech/Vivado/shifters/shifters.srcs/sim_1/new/clock_dividerTB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_dividerTB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Mtech/Vivado/frequency_divider/frequency_divider.sim/sim_1/synth/func/xsim'
+"xelab -wto 7f6124fcfbbc46d1a3fd3b09559af907 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot clock_dividerTB_func_synth xil_defaultlib.clock_dividerTB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7f6124fcfbbc46d1a3fd3b09559af907 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot clock_dividerTB_func_synth xil_defaultlib.clock_dividerTB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module xil_defaultlib.Tflipflop_IP
+Compiling module xil_defaultlib.Tflipflop_IP_0
+Compiling module xil_defaultlib.Tflipflop_IP_1
+Compiling module xil_defaultlib.Tflipflop_IP_2
+Compiling module xil_defaultlib.Tflipflop_IP_3
+Compiling module xil_defaultlib.Tflipflop_IP_4
+Compiling module xil_defaultlib.Tflipflop_IP_5
+Compiling module xil_defaultlib.Tflipflop_IP_6
+Compiling module xil_defaultlib.Tflipflop_IP_7
+Compiling module xil_defaultlib.Tflipflop_IP_8
+Compiling module xil_defaultlib.Tflipflop_IP_9
+Compiling module xil_defaultlib.Tflipflop_IP_10
+Compiling module xil_defaultlib.Tflipflop_IP_11
+Compiling module xil_defaultlib.Tflipflop_IP_12
+Compiling module xil_defaultlib.Tflipflop_IP_13
+Compiling module xil_defaultlib.Tflipflop_IP_14
+Compiling module xil_defaultlib.Tflipflop_IP_15
+Compiling module xil_defaultlib.Tflipflop_IP_16
+Compiling module xil_defaultlib.Tflipflop_IP_17
+Compiling module xil_defaultlib.Tflipflop_IP_18
+Compiling module xil_defaultlib.Tflipflop_IP_19
+Compiling module xil_defaultlib.Tflipflop_IP_20
+Compiling module xil_defaultlib.Tflipflop_IP_21
+Compiling module xil_defaultlib.Tflipflop_IP_22
+Compiling module xil_defaultlib.Tflipflop_IP_23
+Compiling module xil_defaultlib.Tflipflop_IP_24
+Compiling module unisims_ver.OBUF
+Compiling module xil_defaultlib.clock_divider
+Compiling module xil_defaultlib.clock_dividerTB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot clock_dividerTB_func_synth
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source D:/Mtech/Vivado/frequency_divider/frequency_divider.sim/sim_1/synth/func/xsim/xsim.dir/clock_dividerTB_func_synth/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Mar 12 22:11:02 2025...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Mtech/Vivado/frequency_divider/frequency_divider.sim/sim_1/synth/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "clock_dividerTB_func_synth -key {Post-Synthesis:sim_1:Functional:clock_dividerTB} -tclbatch {clock_dividerTB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source clock_dividerTB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'clock_dividerTB_func_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 2105.090 ; gain = 9.617
+run 100n
+ERROR: [#UNDEF] Unknown time unit n
+run 100ns
+run 10m
+ERROR: [#UNDEF] Unknown time unit m
+run 10ms
+$finish called at time : 10 us : File "D:/Mtech/Vivado/shifters/shifters.srcs/sim_1/new/clock_dividerTB.v" Line 17
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 12 22:12:33 2025...
